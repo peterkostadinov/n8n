@@ -20,7 +20,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/${{ github.repository_owner }}/custom-runner:custom docker/runners
+          docker build -t ghcr.io/${{ github.repository_owner }}/custom-runner:custom docker/images/runners
 
       - name: Push Docker image
         run: |
